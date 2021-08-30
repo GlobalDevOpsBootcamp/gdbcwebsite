@@ -6,13 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-        <UpToDateCheckBuilt Include="wwwroot/css/site.css" Set="Css" />
-        <UpToDateCheckBuilt Include="postcss.config.js" Set="Css" />
-        <UpToDateCheckBuilt Include="tailwind.config.js" Set="Css" />
-    </ItemGroup>
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0" />
+  </ItemGroup>
 
-   <Target Name="Tailwind" BeforeTargets="Build">
-        <Exec Command="npm run build-tailwind"/>
-    </Target>
+  <ItemGroup>
+    <UpToDateCheckBuilt Include="wwwroot/css/site.css" Set="Css" />
+    <UpToDateCheckBuilt Include="postcss.config.js" Set="Css" />
+    <UpToDateCheckBuilt Include="tailwind.config.js" Set="Css" />
+  </ItemGroup>
+
+  <Target Name="Tailwind" BeforeTargets="Build">
+    <Exec Command="npm run build-tailwind" />
+  </Target>
+
+
 
 </Project>

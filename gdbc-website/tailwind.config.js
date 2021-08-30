@@ -49,6 +49,7 @@ module.exports = {
       gradientColorStops: ['group-hover']
     },
     fontFamily: {
+      sans: 'Raleway',
       inter: 'Inter, sans-serif'
     }
   },
