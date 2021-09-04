@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" class="mode-dark">
 
 <head>
     {% include head.html %}
 </head>
 
-<body class="antialiased text-gray-900 min-h-screen">
+<body class="antialiased text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-900 min-h-screen">
     {{ content }}
     {% include scripts.html %}
+    <p>This site is open source. {% raw %}{% github_edit_link "Improve this page" %}{% endraw %}</p>
+
 </body>
 
 </html>
