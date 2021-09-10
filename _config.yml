@@ -11,14 +11,12 @@ url: www.globaldevopsbootcamp.com
 
 repository: globaldevopsbootcamp/gdbc-website
 
-permalink: /blog/:year/:month/:day/:title/
-
 twitter:
   username: gdevopsbc
   card: summary
 
 plugins:
-  - jekyll-seo-tag
+  - "jekyll-seo-tag"
   - "jekyll-github-metadata"
 
 exclude: [

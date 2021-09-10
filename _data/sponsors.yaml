@@ -1,0 +1,11 @@
+- name: Microsoft
+  image: 'microsoft.svg'
+
+- name: Xpirit
+  image: 'xpirit.svg'
+
+- name: Solidify
+  image: 'solidify.svg'
+
+- name: "IT Revolution"
+  image: 'itrevolution.png'

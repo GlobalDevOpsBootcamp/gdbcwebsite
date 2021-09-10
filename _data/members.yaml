@@ -1,8 +1,47 @@
-- name: Eric Mill
-  github: konklone
+- name: René van Osnabrugge
+  github: renevanosnabrugge
+  company: Xpirit
 
-- name: Parker Moore
-  github: parkr
+- name: Marcel de Vries
+  github: vriesmarcel
+  company: Xpirit
 
-- name: Liu Fengyun
-  github: liufengyun
+- name: Mathias Olausson
+  github: molausson
+  company: Solidify
+
+- name: Geert van der Cruijsen
+  github: geertvdc
+  company: Xpirit
+
+- name: Jakob Ehn
+  github: jakobehn
+  company: Active Solution
+
+- name: Jasper Gilhuis
+  github: jaspergilhuis
+  company: Xpirit
+
+- name: Jesse Houwing
+  github: jessehouwing
+  company: Xpirit
+
+- name: Magnus Timner
+  github: MagnusTim
+  company: Solidify
+
+- name: Manuel Ericstam
+  github: mericstam
+  company: Solidify
+
+- name: Michiel van Oudheusden
+  github: mivano
+  company: Xpirit
+
+- name: Rob Bos
+  github: rajbos
+  company: Xpirit
+
+- name: Taavi Koosaar
+  github: melborp
+  company: Solidify

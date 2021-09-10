@@ -1,8 +1,8 @@
  // Gen random data
- const N = 15;
+ const N = 20;
 
  const globeContainer = document.querySelector('#globeContainer');
- const height = 600; //globeContainer.offsetHeight;
+ const height = 750; //globeContainer.offsetHeight;
  const arcsData = [...Array(N).keys()].map(() => ({
      startLat: (Math.random() - 0.5) * 180,
      startLng: (Math.random() - 0.5) * 360,
@@ -14,17 +14,18 @@
  const Globe = new ThreeGlobe()
      .globeImageUrl('/images/worldmap.png')
      .arcsData(arcsData)
-     .showGraticules(false)
+     .showGraticules(true)
      .showAtmosphere(false)
      .arcColor('color')
-     .arcStroke(2)
-     .arcDashLength(0.3)
+     .arcStroke(1)
+     .arcDashLength(0.4)
      .arcDashGap(2)
      .arcDashInitialGap(() => Math.random() * 5)
      .arcDashAnimateTime(3000);
 
  // Setup renderer
- const renderer = new THREE.WebGLRenderer();
+ const renderer = new THREE.WebGLRenderer({ alpha: true } );
+ renderer.setClearColor( 0x000000, 0 ); // the second parameter is opacity
 
  renderer.setSize(globeContainer.offsetWidth, height);
  document.getElementById('globeContainer').appendChild(renderer.domElement);
@@ -39,7 +40,7 @@
  const camera = new THREE.PerspectiveCamera();
  camera.aspect = globeContainer.offsetWidth / height ;
  camera.updateProjectionMatrix();
- camera.position.z = 200;
+ camera.position.z = 100;
  camera.position.x = 500
  
  // Add camera controls
