@@ -12,7 +12,7 @@
  }));
 
  const Globe = new ThreeGlobe()
-     .globeImageUrl('/images/worldmap.png')
+     .globeImageUrl('images/worldmap.png')
      .arcsData(arcsData)
      .showGraticules(true)
      .showAtmosphere(false)
