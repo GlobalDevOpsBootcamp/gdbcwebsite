@@ -155,4 +155,4 @@ backLink: false
 <script src="//unpkg.com/three"></script>
 <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
 <script src="//unpkg.com/three-globe"></script>
-<script src="/javascripts/globe.js"></script>
+<script src="{{ site.baseurl  }}/javascripts/globe.js"></script>
