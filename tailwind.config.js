@@ -7,6 +7,7 @@
 */
 
 module.exports = {
+    darkMode: 'class',
     purge: [
         '{,!(node_modules|_site)/**/}*.{html,md}',
     ],

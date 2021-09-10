@@ -1,7 +1,7 @@
 {
-    "name": "your.repo.name",
+    "name": "Global Devops Bootcamp",
     "version": "0.0.1",
-    "description": "Your repo description",
+    "description": "The Global Devops Bootcamp website",
     "scripts": {
         "preinstall": "npx npm-force-resolutions",
         "setup": "gem install bundler && bundle install && npm i",
