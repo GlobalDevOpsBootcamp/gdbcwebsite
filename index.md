@@ -46,7 +46,7 @@ backLink: false
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">{{post.title}}</h2>
         <p class="leading-relaxed mb-8">{{post.excerpt}}</p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
-          <a class="text-yellow-400 inline-flex items-center" href="{{ post.url }}">Read more
+          <a class="text-yellow-400 inline-flex items-center" href="{{ site.baseurl  }}/{{ post.url }}">Read more
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
@@ -110,7 +110,7 @@ backLink: false
     {% for sponsor in site.data.sponsors %}
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 h-56 object-cover object-center mb-4" src="/images/sponsors/{{ sponsor.image}}">
+          <img alt="team" class="flex-shrink-0 h-56 object-cover object-center mb-4" src="{{ site.baseurl  }}/images/sponsors/{{ sponsor.image}}">
           <div class="w-full">
             <h2 class="title-font font-medium text-lg text-white">{{ sponsor.name}}</h2>
             
