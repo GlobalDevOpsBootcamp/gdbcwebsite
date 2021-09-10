@@ -5,6 +5,7 @@
  *
  * Run '$ npm run css:dev' to compile changes in this file.
  */
+const colors = require('tailwindcss/colors')
 
 module.exports = {
     darkMode: 'class',
