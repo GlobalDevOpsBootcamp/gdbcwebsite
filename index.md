@@ -6,7 +6,7 @@ backLink: false
 <section class="flex h-screen bg-gray-900 items-center justify-center">
 
     <div class="w-1/2 justify-center px-24">
-        <img class="object-cover object-center w-full" src="/images/logo.svg">
+        <img class="object-cover object-center w-full" src="{{ site.baseurl }}/images/logo.svg">
     </div>
     <div class="w-1/2" id="globeContainer">
         <div id="globeViz"></div>
