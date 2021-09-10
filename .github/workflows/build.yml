@@ -14,8 +14,10 @@ jobs:
      - name: Install Dependencies
        run: npm install
      - name: Build
-       run: npm run build
-         
+       run: |
+         npm start
+         npm run build
+
     #  - name: Build the site in the jekyll/builder container
     #    run: |
     #      docker run \
