@@ -1,6 +1,8 @@
  // Gen random data
  const N = 15;
 
+ const globeContainer = document.querySelector('#globeContainer');
+ const height = 600; //globeContainer.offsetHeight;
  const arcsData = [...Array(N).keys()].map(() => ({
      startLat: (Math.random() - 0.5) * 180,
      startLng: (Math.random() - 0.5) * 360,
@@ -23,8 +25,9 @@
 
  // Setup renderer
  const renderer = new THREE.WebGLRenderer();
- renderer.setSize(window.innerWidth, window.innerHeight);
- document.getElementById('globeViz').appendChild(renderer.domElement);
+
+ renderer.setSize(globeContainer.offsetWidth, height);
+ document.getElementById('globeContainer').appendChild(renderer.domElement);
 
  // Setup scene
  const scene = new THREE.Scene();
@@ -34,10 +37,10 @@
 
  // Setup camera
  const camera = new THREE.PerspectiveCamera();
- camera.aspect = window.innerWidth / window.innerHeight ;
+ camera.aspect = globeContainer.offsetWidth / height ;
  camera.updateProjectionMatrix();
  camera.position.z = 200;
- //camera.position.x = 500
+ camera.position.x = 500
  
  // Add camera controls
  const tbControls = new THREE.TrackballControls(camera, renderer.domElement);

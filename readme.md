@@ -1,25 +1,9 @@
 <div align="center">
 
-# Jekyll & Tailwind CSS Boilerplate
+# Global Devops Bootcamp website
 
-A bare bones [Jekyll](https://jekyllrb.com/) site which comes preconfigured to use [Tailwind CSS](https://tailwindcss.com/) for styling.
+This is the main globaldevopsbootcamp.com website. We mostly use this site to tell the world what a cool event this is, how you can participate and what we did in the past.
 
-👉 [Try the demo here](https://jekyll-tailwindcss-boilerplate.netlify.app/) 👈
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a783907c-769f-4399-80fd-3b6d511868ff/deploy-status)](https://app.netlify.com/sites/jekyll-tailwindcss-boilerplate/deploys)
-</div>
-
-## Features
-
-- 🤍 Ships free of styling or theming. You can:
-    - [Add a theme](https://jekyllrb.com/resources/)
-    - [Get started with Tailwind CSS](https://tailwindcss.com/docs/utility-first/)
-    - Use the [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugin ([see example](https://jekyll-tailwindcss-boilerplate.netlify.app/2020/01/01/demo.html))
-- 📈 Ships Google Analytics and SEO ready
-- 🍕 Dev mode: your Jekyll site is refreshed on file changes and all Tailwind CSS classes are available for use.
-- 💻 Release mode: CSS is optimised by striping out unused classes and minifying the file.
-
----
 
 ## 👟 Install
 
@@ -109,5 +93,3 @@ Here are the docs for packages used in this boilerplate:
 - Don't whitelist the `_site/` folder as this folder is not guaranteed to exist when deployed to a server
 </details>
 
-### Have another issue?
-Contact me by posting an issue. I'll be happy to help 🙂
