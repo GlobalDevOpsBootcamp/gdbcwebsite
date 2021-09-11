@@ -1,11 +1,15 @@
 - name: Microsoft
   image: 'microsoft.svg'
+  link: https://www.microsoft.com/
 
 - name: Xpirit
   image: 'xpirit.svg'
+  link: https://www.xpirit.com/
 
 - name: Solidify
   image: 'solidify.svg'
+  link: https://www.solidify.com/
 
 - name: "IT Revolution"
   image: 'itrevolution.png'
+  link: https://www.itrevolution.com/
