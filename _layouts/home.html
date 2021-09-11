@@ -6,7 +6,7 @@ layout: default
 <section class="flex h-screen bg-gray-900 items-center justify-center">
 
     <div class="w-1/2 justify-center px-24">
-        <img class="object-cover object-center w-full" src="{{ site.baseurl }}/images/logo.svg">
+        <img class="object-cover object-center w-full" src="{{ '/images/logo.svg' | relative_url }}">
     </div>
     <div class="w-1/2" id="globeContainer">
         <div id="globeViz"></div>
@@ -16,39 +16,16 @@ layout: default
 
 <section class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
             <div class="relative" style="padding-top: 56.25%">
-                <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube-nocookie.com/embed/KshDghBwk8M"
+                <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube-nocookie.com/embed/{{ page.video-id }}?controls=0&amp;start={{ page.video-start-from | default: 0 }}&autoplay=1"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div
-            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">What is Global DevOps Bootcamp</h1>
-
-            <p class="mb-8 leading-relaxed">Global DevOps Bootcamp is a worldwide community event that has now been
-                organized for three years in a row. Each year, we create a full-day experience around a central theme.
-                The day starts with a keynote (of a famous speaker!), a local keynote (by you!), and a challenging yet
-                inspiring hackathon focusing on DevOps practices and Modern Software practices. People also learn about
-                the latest trends and will be sharing their DevOps experiences. It’s a great opportunity to learn
-                hands-on and network with others locally working in this space, and also get to hear all about some
-                real-world DevOps experiences.</p>
-
-            <p class="mb-8 leading-relaxed">
-                The event is held globally on the same day. The great thing for you as an organizer, is that you only
-                have to worry about a good location and skilled people that can proctor during the day. We will take
-                care of the rest. We will provide you all materials for the keynote and hackathon, provide you with
-                marketing materials and during the day we provide a fully-fledged infrastructure so that your
-                participants can get started right away! The last edition, we had around 90 venues and 10.000 people
-                joining worldwide.</p>
-
-            <!-- <div class="flex justify-center">
-        <button class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
-      </div> -->
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            {{ page.content }}
         </div>
     </div>
 </section>
@@ -66,7 +43,7 @@ layout: default
                 <p class="leading-relaxed mb-8">{{post.excerpt}}</p>
                 <div
                     class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
-                    <a class="text-yellow-400 inline-flex items-center" href="{{ site.baseurl  }}/{{ post.url }}">Read
+                    <a class="text-yellow-400 inline-flex items-center" href="{{ post.url | relative_url}}">Read
                         more
                         <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -74,7 +51,9 @@ layout: default
                             <path d="M12 5l7 7-7 7"></path>
                         </svg>
                     </a>
-
+                    <span class="text-gray-500 mr-3 inline-flex items-center ml-auto leading-none text-sm pl-3 py-1 border-l-2 border-gray-800">
+                        {{ post.date | date: '%d %B %Y' }}
+                      </span>
                 </div>
 
             </div>
@@ -83,6 +62,12 @@ layout: default
 
         </div>
     </div>
+    <div class="container px-5 py-2 mx-auto">
+        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+          <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">For more news, visit our blog posts page</h1>
+          <a class="flex-shrink-0 text-white bg-gdbc-orange border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg mt-10 sm:mt-0" href="{{ site.baseurl}}/posts">Posts</a>
+        </div>
+      </div>
 </section>
 
 <section class="text-gray-400 bg-gray-900 body-font">
@@ -90,7 +75,7 @@ layout: default
 
         <div class="flex flex-col">
             <div class="h-1 bg-gray-800 rounded overflow-hidden">
-                <div class="w-24 h-full bg-yellow-500"></div>
+                <div class="w-24 h-full bg-gdbc-orange"></div>
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Our team</h1>
@@ -110,7 +95,7 @@ layout: default
                         <h2 class="text-white title-font font-medium"> {{ member.name }}</h2>
                         {% if member.twitter %}
                         <a href="https://twitter.com/{{ member.twitter }}"><svg
-                                class="fill-current text-white inline-block" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-gdbc-orange inline-block" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path
                                     d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
@@ -120,7 +105,7 @@ layout: default
                         {% endif %}
                         {% if member.github %}
                         <a href="https://github.com/{{ member.github }}"><svg
-                                class="fill-current text-white inline-block" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-gdbc-orange inline-block" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path
                                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -142,7 +127,7 @@ layout: default
 
         <div class="flex flex-col">
             <div class="h-1 bg-gray-800 rounded overflow-hidden">
-                <div class="w-24 h-full bg-yellow-500"></div>
+                <div class="w-24 h-full bg-gdbc-orange"></div>
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Sponsors</h1>
@@ -156,7 +141,7 @@ layout: default
                 <div class="h-full flex flex-col items-center text-center">
                     <a href="{{ sponsor.link }}">
                         <img alt="team" class="flex-shrink-0 h-56 object-cover object-center mb-4"
-                            src="{{ site.baseurl }}/images/sponsors/{{ sponsor.image}}">
+                            src="{{ sponsor.image | prepend: '/images/sponsors/'  | relative_url }}">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-white">{{ sponsor.name}}</h2>
                         </div>
@@ -173,7 +158,7 @@ layout: default
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col">
             <div class="h-1 bg-gray-800 rounded overflow-hidden">
-                <div class="w-24 h-full bg-yellow-500"></div>
+                <div class="w-24 h-full bg-gdbc-orange"></div>
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                 <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Testimonials</h1>
@@ -188,7 +173,7 @@ layout: default
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                 <div class="h-full text-center">
                     <p class="leading-relaxed">{{ testimonial.text }}</p>
-                    <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-6 mb-4"></span>
+                    <span class="inline-block h-1 w-10 rounded bg-gdbc-orange mt-6 mb-4"></span>
                 </div>
             </div>
 
@@ -201,7 +186,4 @@ layout: default
 <script src="//unpkg.com/three"></script>
 <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
 <script src="//unpkg.com/three-globe"></script>
-<script src="{{ site.baseurl }}/javascripts/globe.js"></script>
-
-
-{{ content }}
+<script src="{{ '/javascripts/globe.js' | relative_url }}"></script>

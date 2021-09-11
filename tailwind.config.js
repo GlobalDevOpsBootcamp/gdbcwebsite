@@ -33,8 +33,6 @@ module.exports = {
                 }
             },
             colors: {
-                turqoise: colors.cyan,
-                gray: colors.blueGray,
                 'dark-alternate': '#212224',
                 'dark-200': '#1F2129',
                 'dark-300': '#2B2D33',
@@ -51,11 +49,10 @@ module.exports = {
             gradientColorStops: ['group-hover'],
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-              },
+            }
         }
-    },
-   
+    },   
     plugins: [
         require('@tailwindcss/typography'),
-    ],
+    ]
 }
