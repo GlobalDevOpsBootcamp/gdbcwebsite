@@ -1,5 +1,3 @@
-<div align="center">
-
 # Global Devops Bootcamp website
 
 This is the main globaldevopsbootcamp.com website. We mostly use this site to tell the world what a cool event this is, how you can participate and what we did in the past.

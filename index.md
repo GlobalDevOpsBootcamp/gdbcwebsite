@@ -2,6 +2,7 @@
 layout: home
 video-id: KshDghBwk8M
 video-start-from: 9
+video-auto-play: 0
 ---
 
 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">What is Global DevOps Bootcamp</h1>
