@@ -139,9 +139,9 @@ layout: default
             {% for sponsor in site.data.sponsors %}
             <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                    <a href="{{ sponsor.link }}">
+                    <a href="{{ sponsor.link }}" target="_blank">
                         <img alt="team" class="flex-shrink-0 h-56 object-cover object-center mb-4"
-                            src="{{ sponsor.image | prepend: '/images/sponsors/'  | relative_url }}">
+                            src="{{ sponsor.image | prepend: '/images/sponsors/' | relative_url }}">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-white">{{ sponsor.name}}</h2>
                         </div>
