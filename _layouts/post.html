@@ -18,3 +18,9 @@ layout: default
 <article class="prose dark:prose-dark prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
     {{ content }}
 </article>
+
+{% if page.share %}{% include social-share.html %}{% endif %}
+
+{% if site.comments.provider and page.comments %}
+{% include comments.html %}
+{% endif %}
