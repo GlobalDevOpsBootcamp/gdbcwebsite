@@ -1,8 +1,6 @@
 <section class="text-gray-400 bg-gray-900 body-font">
     <div class="container px-5 py-24 mx-auto">
-        {% if site.data.ui-text[site.locale].share_on_label %}
-        <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
-        {% endif %}
+        <h4 class="inline-flex">Share on</h4>
         <span class="inline-flex">
             <a class="text-gray-500" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"   onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Share on Facebook">
