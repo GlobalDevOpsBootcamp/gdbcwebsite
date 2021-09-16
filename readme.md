@@ -5,7 +5,7 @@ This is the main globaldevopsbootcamp.com website. We mostly use this site to te
 
 ## 👟 Install
 
-Ensure [Ruby](https://www.ruby-lang.org/en/downloads/) and [node](https://nodejs.org) (v12.13+) are installed then setup the project:
+Ensure [Ruby](https://www.ruby-lang.org/en/downloads/) and [node](https://nodejnvms.org) (v12.13+) are installed then setup the project:
 ```
 npm run setup
 ```
