@@ -1,25 +1,31 @@
 - name: René van Osnabrugge
   github: renevanosnabrugge
+  twitter: renevo
   company: Xpirit
 
 - name: Marcel de Vries
   github: vriesmarcel
+  twitter: marcelv
   company: Xpirit
 
 - name: Mathias Olausson
   github: molausson
+  twitter: molausson
   company: Solidify
 
 - name: Geert van der Cruijsen
   github: geertvdc
+  twitter: geertvdc
   company: Xpirit
 
 - name: Jasper Gilhuis
   github: jaspergilhuis
+  twitter: jaspergilhuis
   company: Xpirit
 
 - name: Jesse Houwing
   github: jessehouwing
+  twitter: jessehouwing
   company: Xpirit
 
 - name: Magnus Timner
@@ -28,6 +34,7 @@
 
 - name: Manuel Ericstam
   github: mericstam
+  twitter: EricstamManuel
   company: Solidify
 
 - name: Michiel van Oudheusden
@@ -37,8 +44,10 @@
 
 - name: Rob Bos
   github: rajbos
+  twitter: RobBos81
   company: Xpirit
 
 - name: Taavi Koosaar
   github: melborp
+  twitter: melborp
   company: Solidify
