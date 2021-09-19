@@ -1,7 +1,10 @@
 # Global Devops Bootcamp website
 
-This is the main globaldevopsbootcamp.com website. We mostly use this site to tell the world what a cool event this is, how you can participate and what we did in the past.
+This is the main globaldevopsbootcamp.com website. We mostly use this site to tell the world what a cool event this is, how you can participate and what we did in the past. 
 
+In the `_data` folder you will find some collections which are converted during the site creation. Under the `_posts` you can add additional blog posts. Yes, it is all static, precompiled with Jekyll and hosted on GitHub Pages.
+
+The Giscus comments system is used. People can comment on blob posts which will be placed inside the discussion page of this repository.
 
 ## 👟 Install
 
@@ -35,9 +38,11 @@ npm run build
 ```
 Tailwind CSS is minified and Jekyll outputs the site to the `_site` folder.
 
-Deploy statically (e.g. [Netlify](https://www.netlify.com/)) with the following build settings:
+Deploy statically (e.g. GitHub Pages) with the following build settings:
 - Command: `npm run build`
 - Directory: `_site`
+
+There is a workflow file which does all this as tailwind needs to be precompiled.
 
 ---
 

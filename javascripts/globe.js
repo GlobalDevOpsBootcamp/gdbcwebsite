@@ -40,8 +40,9 @@
  const camera = new THREE.PerspectiveCamera();
  camera.aspect = globeContainer.offsetWidth / height ;
  camera.updateProjectionMatrix();
- camera.position.z = 100;
- camera.position.x = 500
+ camera.position.z = 140;
+ camera.position.x = 180;
+ camera.position.y = 130; 
  
  // Add camera controls
  const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
