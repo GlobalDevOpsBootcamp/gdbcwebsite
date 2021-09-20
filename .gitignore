@@ -1,5 +1,6 @@
 _site/
 .cache/
+.parcel-cache/
 .jekyll-cache/
 dist/
 node_modules/
