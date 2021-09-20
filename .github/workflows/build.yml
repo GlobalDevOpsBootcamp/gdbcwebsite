@@ -1,9 +1,7 @@
 on:
    push:
-     branches: [ main ]
    pull_request:
-     branches: [ main ]
-
+  
 jobs:
    build:
 
@@ -20,6 +18,7 @@ jobs:
          jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && npm run build --future"
          
      - name: GitHub Pages
+       if: github.ref == 'refs/heads/main'
        uses: crazy-max/ghaction-github-pages@v2.5.0
        with:
         build_dir: _site/
