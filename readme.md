@@ -1,4 +1,4 @@
-# Global Devops Bootcamp website
+# Global DevOps Bootcamp website
 
 This is the main globaldevopsbootcamp.com website. We mostly use this site to tell the world what a cool event this is, how you can participate and what we did in the past. 
 
@@ -62,7 +62,7 @@ Here are the docs for packages used in this boilerplate:
 <details>
   <summary><b>What is the tailwindcss-typography plugin and do I need it?</b></summary>
 
-- By default Tailwind [normalises](https://tailwindcss.com/docs/preflight) styles so headings, paragraphs, etc. look the same
+- By default Tailwind [normalizes](https://tailwindcss.com/docs/preflight) styles so headings, paragraphs, etc. look the same
 - But Jekyll is often used for blogs and other text heavy site where you often *want* default text styles
 - The typography plugin solves this and brings nice default styles to markdown generated content
 - It's completely optional and easy to activate for specific content via the `prose` classes
@@ -74,7 +74,7 @@ Here are the docs for packages used in this boilerplate:
   <summary><b>Why are CSS file changes slow to update?</b></summary>
 
 - When you update  the `index.css` file all Tailwind classes have to regenerate (via Parcel) which can take up to ~10 secs
-- In practise this isn't a common problem as most people don't update the file that often
+- In practice this isn't a common problem as most people don't update the file that often
 - If you *are* writing custom CSS then you can add non-Tailwind CSS files and add refer to them in the `head.html` file directly which skips the Parcel build process
 </details>
 
