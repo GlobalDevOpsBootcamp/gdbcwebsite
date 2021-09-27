@@ -16,7 +16,7 @@ npm run setup
 Configure Jekyll via `_config.yml`:
 - Add your site title and description
 - Add your google analytics ID
-- Add seo config via [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) docs
+- Add SEO config via [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) docs
 
 ## 🍕 Develop
 
