@@ -21,8 +21,9 @@ guided by proctors and local event organizers.
 The team behind Global DevOps Bootcamp already started working on everything we need to make this day an experience to
 remember. This time the
 learnings for the day will be centered around chaos:
-
-![Logo image of "embrace chaos to achieve stability](/images/embrace-chaos-logo.png)
+<div class="flex justify-center">
+  ![Logo image of "embrace chaos to achieve stability](/images/embrace-chaos-logo.png)
+</div>
 
 **We hope to see you there!**
 
