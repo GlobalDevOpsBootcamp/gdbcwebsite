@@ -27,7 +27,7 @@ learnings for the day will be centered around chaos:
 
 **We hope to see you there!**
 
-We’ll be dependent on how thing will develop in the new year, but we expect to have a mix of (smaller) venues together
+We’ll be dependent on how things will develop in the new year, but we expect to have a mix of (smaller) venues together
 with a virtual part of the bootcamp this time around. That way we can cater for everyone and every situation. We’ll
 arrange an awesome keynote and have a platform you get to work on to learn by doing things yourself, together with a
 team. Learn how to work in a DevOps way by spending a day with likeminded people!
