@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GDBC 2022 on May 14th - Venues wanted!
-category: announcement
+category: post
 excerpt: |
   Global DevOps Bootcamp 2022 will be held on May 14th. The theme this year is “Embrace Chaos to achieve stability”. We will dive into concepts of Chaos Engineering . We are looking for venues and proctors to organize this years event. 
 ---
@@ -11,13 +11,13 @@ excerpt: |
 
 {:.lead}
 ## TL;DR;
-Global DevOps Bootcamp 2022 will be held on May 14th. The theme this year is “Embrace Chaos to achieve stability”. We will dive into concepts of Chaos Engineering . We are looking for venues and proctors to organize this years event. If you are interested, please <a href="https://globaldevopsbootcamp.com/announcement/2021/09/19/announcement-2022-edition.html">sign up on this page!</a>
+Global DevOps Bootcamp 2022 will be held on May 14th. The theme this year is “Embrace Chaos to achieve stability”. We will dive into concepts of Chaos Engineering. We are looking for venues and proctors to organize this years event. If you are interested, please <a href="https://globaldevopsbootcamp.com/announcement/2021/09/19/announcement-2022-edition.html">sign up on this page!</a>
 
 ## Introduction
  
 We are on! We are in the preparation for Global DevOps Bootcamp 2022. Unfortunately we had to cancel the event in 2020 and did not even bother in 2021, but now we are buzzing again. Time for a new edition of Global DevOps Bootcamp. In this post, we will inform you about the event, the plans and ask you to  consider hosting the event this year. Different from previous years, we are building a hybrid event, which means, on location, virtual and (if people want to) mixed. 
  
-Global DevOps Bootcamp will be held on Saturday May 14th.
+> Global DevOps Bootcamp will be held on Saturday May 14th.
 
 ## What is Global DevOps Bootcamp
 Maybe you are already familiar with the Global DevOps Bootcamp. If not, read on! Global DevOps Bootcamp (or GDBC) is a worldwide event that is hosted and organized by many different companies and people all around the world. 

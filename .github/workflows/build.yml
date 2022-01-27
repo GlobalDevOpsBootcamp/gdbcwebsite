@@ -15,7 +15,7 @@ jobs:
        run: |
          docker run \
          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && npm run build --future"
+         jekyll/builder:4 /bin/bash -c "chmod -R 777 /srv/jekyll && npm run build --future"
          
      - name: GitHub Pages
        if: github.ref == 'refs/heads/main'
