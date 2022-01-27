@@ -1,0 +1,7 @@
+{
+    "yaml.schemas": {
+        "kubernetes": "*.yaml",
+        "file:///toc.schema.json": "/toc\\.yml/i",
+        "https://json.schemastore.org/github-workflow.json": "file:///c%3A/projects/xpirit/gdbc/gdbc-website/.github/workflows/build.yml"
+    }
+}
