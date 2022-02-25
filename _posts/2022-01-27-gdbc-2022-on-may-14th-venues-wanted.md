@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GDBC 2022 on May 14th - Venues wanted!
+published: false
 category: post
 excerpt: |
   Global DevOps Bootcamp 2022 will be held on May 14th. The theme this year is “Embrace Chaos to achieve stability”. We will dive into concepts of Chaos Engineering . We are looking for venues and proctors to organize this years event. 
