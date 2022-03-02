@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Status update on GDBC 2022 
-published: false
+published: true
 category: announcement
 excerpt: |
   After our cancellation of GDBC 2020 due to the pandemic we found new energy and motivation to start a GDBC 2022 edition. In September we, Xpirit and Solidify, came together to draft the outline of a new type of event. Suitable for physical, online and hybrid location. We had bold plans and came up with the theme “Embrace Chaos to Achieve Stability”. In the last months we have been preparing GDBC 2022 with quite a large group of enthusiastic people.

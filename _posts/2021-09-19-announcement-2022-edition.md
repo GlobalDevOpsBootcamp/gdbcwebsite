@@ -1,6 +1,7 @@
 ---
 layout: post
 title: May 14th, 2022
+published: false
 category: announcement
 excerpt: |
   Saturday, the 14th of May, in 2022 will be a special day, where you will get to explore DevOps with a new edition of
